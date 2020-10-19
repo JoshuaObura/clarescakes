@@ -1,8 +1,17 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: #28ABB9;
+  background-color: #28ABB9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 1s ease 0s !important;
 }
 
+.navbar.transparent {
+  background-color: transparent !important;
+  transition: background-color 1s ease 0s !important;
+  box-shadow: 0 0 4px grey !important;
+}
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -14,4 +23,15 @@
 .nav-link{
   color:white !important;
   font-size: 18px;
+  //sets up hover
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.nav-link:hover{
+ color:white !important;
+ top: -2px;
+ //box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+ text-decoration: none;
 }

@@ -13,7 +13,9 @@
   </head>
 
   <body>
+  <% unless @hide_navbar%>
     <%= render 'shared/navbar' %>
+  <% end %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>

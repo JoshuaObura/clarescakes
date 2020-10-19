@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "/", class: "navbar-brand" do %>
-    <%= image_tag "https://o.remove.bg/downloads/eabfa552-188e-455b-82e3-05e53ad59217/clares_logo-removebg-preview.png" %>
-    <% end %>
+  <%= link_to "#home", class: "navbar-brand" do %>
+    <%= image_tag "logo.png" %>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,13 +11,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <%= link_to "Home", "#home", class: "nav-link scrollTo" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Cakes", "#", class: "nav-link" %>
+          <%= link_to "Cakes", "#cakes", class: "nav-link scrollTo" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Classes", "#", class: "nav-link" %>
+          <%= link_to "Classes", "#classes", class: "nav-link scrollTo" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", "#contact", class: "nav-link scrollTo" %>
         </li>
       <% if user_signed_in? %>
         <li class="nav-item active">
