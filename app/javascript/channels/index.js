@@ -63,7 +63,7 @@ var navHeight = $( window ).height() - 81;
      }
      else {
        $('.up').removeClass('fixed');
-       $("#top-anchor").css({bottom: '-100px'});
+       $("#top-anchor").css({bottom: '-50px'});
      }
   });
 });

@@ -10,8 +10,9 @@
 .navbar.transparent {
   background-color: transparent !important;
   transition: background-color 1s ease 0s !important;
-  box-shadow: 0 0 4px grey !important;
+  box-shadow: 0 0 1px grey !important;
 }
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }

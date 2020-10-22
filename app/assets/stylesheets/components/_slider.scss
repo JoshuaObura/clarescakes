@@ -1,13 +1,18 @@
 
+.image-edit{
+  background-size: cover !important;
+}
+
 .slider {
   margin: 0 auto;
 /*   max-width: 940px; */
 }
 
 .slide_viewer {
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
+  background: rgba(0,0,0,0.5) !important;
 }
 
 .slide_group {
@@ -21,6 +26,7 @@
   height: 100%;
   position: absolute;
   width: 100%;
+  
 }
 
 .slide:first-child {
@@ -106,11 +112,11 @@ a.slide_btn {
   opacity: 1;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .previous_btn {
     left: 50px;
   }
   .next_btn {
     right: 50px;
   }
-}
+} */
