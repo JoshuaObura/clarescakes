@@ -1,7 +1,8 @@
 .img{
  height: 90vh;
- width: 90vh;
+ width: 100%;
  background: rgba(0,0,0,0.5) !important;
+ object-fit: cover;
 }
 
 .slider {
