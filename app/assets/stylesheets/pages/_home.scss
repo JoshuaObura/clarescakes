@@ -1,10 +1,15 @@
 // Specific CSS for your home-page
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Lateef&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Lateef&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lateef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 .text-container{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 60px;
+  padding-left: 5%;
+  padding-right: 5%;
   align-content: center;
+  text-align: center;
+}
+
+h2{
+  padding-top: 30px;
 }

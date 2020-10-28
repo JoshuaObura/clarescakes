@@ -1,9 +1,12 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Lateef&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lateef&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font:  "Handlee", "Lateef", "Handlee";
+$headers-font: "Handlee", "Lafteef", "Bad Script";
+$nav-link:  "Handlee", "Lateef", "Handlee";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
