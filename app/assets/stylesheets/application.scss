@@ -5,11 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lateef&display=swap');
 
 .body{
-  background: #F0F7F4;
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+}
+.page{
+  /* background-color: #F5B0CB !important; */
 }
 @keyframes fadein {
   from {
