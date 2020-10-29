@@ -30,6 +30,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'devise'
 
+gem 'rails_admin', '~> 2.0'
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
