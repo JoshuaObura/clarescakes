@@ -1,7 +1,13 @@
 .block {
   color: black;
-  text-align: center;
+  text-align: center !important;
   text-shadow: 0 0 1px #333;
+}
+
+.titles{
+		align-items: center !important;
+    display: flex;
+    text-align: center !important;
 }
 
 .images{
