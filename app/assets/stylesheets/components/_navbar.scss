@@ -10,7 +10,7 @@
 .navbar.transparent {
   background-color: transparent !important;
   transition: background-color 1s ease 0s !important;
-  box-shadow: 0 0 1px grey !important;
+  box-shadow: 0 0 1px white !important;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -22,7 +22,7 @@
 }
 
 .nav-link{
-  color:white !important;
+  color:pink !important;
   font-size: 18px;
   //sets up hover
   position: relative;
@@ -31,7 +31,7 @@
 }
 
 .nav-link:hover{
- color:white !important;
+ color:pink !important;
  top: -2px;
  //box-shadow: 0 4px 5px rgba(0,0,0,0.2);
  text-decoration: none;

@@ -21,4 +21,7 @@
 
     <%= yield %>
   </body>
+  <% unless @hide_footer %>
+    <%= render 'shared/footer' %>
+  <% end %>
 </html>
