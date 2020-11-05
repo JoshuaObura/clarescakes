@@ -6,9 +6,18 @@
 .text-container{
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 30px;
   align-content: center;
   text-align: center;
+  font-size: 20px;
 }
+    @media (min-width: 996px) {
+      .text-container{
+      padding-top:  30px;
+      padding-left: 70px;
+      padding-right: 70px;
+      }
+    }
 
 h2{
   padding-top: 30px;

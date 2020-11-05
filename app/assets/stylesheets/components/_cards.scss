@@ -9,8 +9,17 @@
   object-fit: cover;
   height: 50vh;
   border-radius: 5px;
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
+	@media (min-width: 300px) {
+		.images{
+			width:100%;
+			object-fit: cover;
+			height: 80vh;
+			border-radius: 5px;
+			padding-bottom: 10px;
+		}
+	}
 
 .animatable {
   
