@@ -3,7 +3,7 @@
   background-color: #28ABB9;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   transition: background-color 1s ease 0s !important;
 }
 
@@ -28,6 +28,7 @@
   position: relative;
   top: 0;
   transition: all .1s ease-in;
+  z-index: 1000;
 }
 
 .nav-link:hover{
