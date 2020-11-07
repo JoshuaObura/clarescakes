@@ -1,6 +1,12 @@
-class ContactController < ApplicationController
+class ContactsController < ApplicationController
+  require 'mail_form'
+  def new
+    @contact = Contact.new
+  end
+    
   def create
     @contact = Contact.new()
+    @contact.request = request
     @contact.name = params[:name]
     @contact.email = params[:email]
     @contact.message = params[:message]
