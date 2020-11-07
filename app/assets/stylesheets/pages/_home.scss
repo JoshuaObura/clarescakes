@@ -24,13 +24,7 @@ h2{
   position: absolute;
   align-items: center;
   text-align: center;
-  padding-left: 48%;
-}
-
-@media (max-width: 800px){
-  h2{
-    padding-left: 44%;
-  }
+  padding-left: 50%;
 }
 
 @media (max-width: 500px){
@@ -39,12 +33,8 @@ h2{
   }
 }
 
-#cakes{
-  margin-top: 10px;
-}
-
-#forms{
-  position: inherit;
-  text-align: center !important;
-  padding: 0;
+@media (max-width: 800px){
+  h2{
+    padding-left: 45%;
+  }
 }
