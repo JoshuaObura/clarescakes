@@ -93,15 +93,15 @@
           <div class="block animatable fadeInUp titles"><h2> Contact </h2><%= image_tag "call.jpg", class: "images" %>
           </div>
         <div class="text-container">
-          <h2 id="forms"> Get in touch </h2>
-          <div class="simple-form-contact ml-4 mt-4 mr-4">
-            <%= simple_form_for(@contact) do |f| %>
-              <%= f.input :name, required: true %>
-              <%= f.input :email, required: true %>
-              <%= f.input :message, required: true %>
-              <%= f.button :submit, 'Contact', class: "btn btn-info", id: "contact-btn" %>
-            <% end %>
-          </div>
-        </div>
+        <h2 id="forms"> Get in touch </h2>
+      <div class="simple-form-contact ml-4 mt-4 mr-4">
+        <%= simple_form_for(contact_index_path) do |f| %>
+          <%= f.input :name %>
+          <%= f.input :email %>
+          <%= f.input :message %>
+          <%= f.button :submit, 'Contact', class: "btn btn-info", id: "contact-btn" %>
+        <% end %>
       </div>
+    </div>
+  </div>
 </div>
