@@ -1,7 +1,7 @@
 Rails.application.configure do
   # config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
-  config.action_mailer_default_url_options = { host: 'http://localhost:3000/' }
-  Rails.application.routes.default_url_options[:host] = 'http://localhost:3000/'
+  config.action_mailer_default_url_options = { host: 'https://your-app-site.com' }
+  Rails.application.routes.default_url_options[:host] = 'https://your-app-site.com'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
@@ -12,8 +12,8 @@ Rails.application.configure do
     domain: 'gmail.com'
     authentication: 'plain'
     enable_starttls_auto: true
-    user_name: ENV['joshobura']
-    password: ENV['ftyiiobzciegkrvg']
+    user_name: ENV['GMAIL_USERNAME']
+    password: ENV['GMAIL_PASSWORD']
   }
   # Settings specified here will take precedence over those in config/application.rb.
 
