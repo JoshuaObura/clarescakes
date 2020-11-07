@@ -27,7 +27,7 @@ Devise.setup do |config|
   config.mailer_sender = 'joshobura@gmail.com'
 
   # Configure the class responsible to send e-mails.
-  config.mailer = 'MailForm::Base'
+  # config.mailer = 'Devise::Mailer'
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
