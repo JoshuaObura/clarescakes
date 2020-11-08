@@ -1,14 +1,14 @@
-class ContactMailerController < ApplicationController
+class ContactsController < ApplicationController
   skip_before_action :authenticate_user!
   def create
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      ContactMailer.with(contact: @contact).contact_mailer.deliver
+      ContactMailer.with(contact: @contact).contact_form_email.deliver
       flash[:notice] = "Message Sent Successfully! Thank you."
-      redirect_to :root
+      redirect_to contact_path
     else
-      render 'pages/home'
+      render 'pages#home'
     end
   end
 
