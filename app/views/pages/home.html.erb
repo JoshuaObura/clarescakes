@@ -92,21 +92,15 @@
       <div id="contact">
           <div class="block animatable fadeInUp titles"><h2> Contact </h2><%= image_tag "call.jpg", class: "images" %>
           </div>
-        <div class="text-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam distinctio ipsam illum mollitia.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus sed vulputate.
-            Id aliquet risus feugiat in ante metus.
-            Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae.
-            Orci nulla pellentesque dignissim enim.
-            Eget sit amet tellus cras.
-            Mauris pellentesque pulvinar pellentesque habitant morbi.
-            Rhoncus urna neque viverra justo nec ultrices.
-            Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.
-            Nec feugiat in fermentum posuere urna.
-            Vitae semper quis lectus nulla at volutpat diam ut venenatis.
-            Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate.
-            Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Nulla aliquet porttitor lacus luctus.</p>
-
+  <div class="text-container">
+  <h3 class="mb-5">Get in touch</h3>
+  <div class="form__wrapper">
+    <%= simple_form_for(@contact, url: "contact_path", method: :post, remote: true, wrapper: :horizontal_form, defaults: { input_html: { class: 'form__defaults--input' }, label_html: { class: 'form__defaults--label' } }) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :email, required: true, placeholder: "user@domain.com", input_html: { autocomplete: 'email' } %>
+      <%= f.input :message, as: :text, required: true, error: 'A message is required', input_html: { 'rows': 5 } %>
+      <%= f.button :submit, "Send email", class: "btn btn-primary mt-3 text-white form__defaults--btn" %>
+    <% end %>
         </div>
     </div>
   </div>
