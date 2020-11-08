@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
       flash[:notice] = "Message Sent Successfully! Thank you."
       redirect_to contact_path
     else
-      render 'pages#home'
+      render 'pages/contact'
     end
   end
 
