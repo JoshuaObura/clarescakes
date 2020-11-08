@@ -1,7 +1,10 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :cakes, :classes ]
+  skip_before_action :authenticate_user!, only: [ :home, :cakes, :classes, :contact ]
 
   def home
- #   @contact = Contact.new
+  end
+  
+  def contact
+    @contact = Contact.new
   end
 end

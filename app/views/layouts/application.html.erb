@@ -15,14 +15,16 @@
 
   <body>
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lateef&display=swap" rel="stylesheet">
-  <% unless @hide_navbar%>
-    <%= render 'shared/navbar' %>
-  <% end %>
+  <%# <% unless @hide_navbar %>
+  <%#  <%= render 'shared/navbar' %>
+  <%# <% end %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
-  </body>
+    <div>
   <% unless @hide_footer %>
     <%= render 'shared/footer' %>
+  </div>
   <% end %>
+  </body>
 </html>

@@ -3,12 +3,12 @@
   /* display: flex; */
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  /* height: 100px; */
   padding: 15px 50px;
   color: rgba(0,0,0,0.3);
   font-size: 16px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: auto;
 }
 .footer-links {
   align-items: center;
@@ -21,9 +21,11 @@
   text-decoration: none;
   font-size: 24px;
   padding: 5px 20px;
+  transition: ease-in-out .2s;
 }
 .footer-links a:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 .footer .fa-heart {
   color: #D23333;

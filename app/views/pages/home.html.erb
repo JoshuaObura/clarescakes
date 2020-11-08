@@ -1,3 +1,4 @@
+<%= render 'shared/navbar' %>
 <div class="page">
   <div id="home">
     <a href ="#home" class="scrollTo"></a>
@@ -89,19 +90,17 @@
         </div>
       </div>
 
-      <div id="contact">
+      <div id="contact-clare">
           <div class="block animatable fadeInUp titles"><h2> Contact </h2><%= image_tag "call.jpg", class: "images" %>
           </div>
   <div class="text-container">
-  <h3 class="mb-5">Get in touch</h3>
-   <div class="form__wrapper">
-<%#    <%= simple_form_for(@contact, url: "/", method: :post, remote: true, wrapper: :horizontal_form, defaults: { input_html: { class: 'form__defaults--input' }, label_html: { class: 'form__defaults--label' } }) do |f| %>
-<%#      <%= f.input :name %>
-<%#      <%= f.input :email, required: true, placeholder: "user@domain.com", input_html: { autocomplete: 'email' } %>
-<%#      <%= f.input :message, as: :text, required: true, error: 'A message is required', input_html: { 'rows': 5 } %>
-<%#      <%= f.button :submit, "Send email", class: "btn btn-primary mt-3 text-white form__defaults--btn" %>
-<%#    <% end %>
-        </div>
-    </div>
+  <%= link_to "Get In Touch With Clare", contact_path, target: :_blank %>
+  <br>
+  <p>You can find a link to Clare's Facebook page <a href="https://www.facebook.com/clareharpercakes/" target="blank"> here </a>
+      where she can answer any questions you may have.
+   </p>
+   <p> Or you can feel free to reach out at clarescakesyourdesign20@gmail.com
+    </p>
+  </div>
   </div>
 </div>
