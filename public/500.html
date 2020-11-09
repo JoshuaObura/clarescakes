@@ -1,66 +1,141 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
+    * {
+      box-sizing: border-box;
+      transition: .15s ease;
+      transition-property: color, background-color, border-color;
+    }
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    html {
+      font: 18px 'Roboto', sans-serif;
+      cursor: default;
+      height: 100%;
+    }
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
+    body {
+      font-size: 0;
+      background: #fdfdfd;
+      color: #222;
+      letter-spacing: 1.25px;
+      display: flex;
+      min-height: 100%;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    @keyframes oj-500--entrance {
+      0% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+    }
+
+    .oj-500 {
+      padding: 3rem;
+      width: 432px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      animation: oj-500--entrance .3s ease;
+
+      &-title {
+        margin: 1rem 0;
+
+        &__caption {
+          text-transform: uppercase;
+          font-size: 1.25rem;
+          color: #aaa;
+        }
+
+        &__svg {
+          margin: 0 -2%;
+          width: 104%;
+
+          text {
+            font-size: 10rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &-body {
+        margin: 2rem 0;
+
+        p {
+          margin: 0;
+          font-size: 1rem;
+          line-height: 1.6em;
+        }
+      }
+
+      &-btn {
+        display: inline-block;
+        color: inherit;
+        width: 100%;
+        text-decoration: none;
+        padding: .4rem 1.2rem;
+        font-size: 1rem;
+        background: #fff;
+        border: 1px solid #888;
+        border-radius: 6px;
+        margin: 3rem 0;
+
+        &:hover {
+          background-color: #333;
+          border-color: transparent;
+          color: #fff;
+        }
+      }
+    }
   </style>
+  <title>500</title>
 </head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div>
-      <h1>We're sorry, but something went wrong.</h1>
+<body>
+  <div class="oj-500">
+    <div class="oj-500-title">
+      <small class="oj-500-title__caption">Internal Server Error</small>
+      <svg class="oj-500-title__svg">
+      <defs>
+        <linearGradient id="gradient"
+                        x1="0"
+                        x2="0"
+                        y1="0"
+                        y2="100%"
+                        gradientTransform="rotate(20)">
+          <stop stop-color="#0078ff"
+                offset="0%"/>
+          <stop stop-color="#0f73e4"
+                offset="100%"/>
+        </linearGradient>
+      </defs>
+      <text fill="url(#gradient)"
+            x="50%"
+            y="25%"
+            text-anchor="middle"
+            dominant-baseline="hanging">
+        500
+      </text>
+    </svg>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <div class="oj-500-body">
+      <p>
+        We're working hard to resolve this issue. Please check back shortly.
+      </p>
+      <p>
+<!--         <a class="oj-500-btn" href="/">
+        Return Home
+      </a> -->
+      </p>
+    </div>
   </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
