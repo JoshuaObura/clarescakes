@@ -36,3 +36,17 @@
  //box-shadow: 0 4px 5px rgba(0,0,0,0.2);
  text-decoration: none;
 }
+
+h1{
+font-size: 35px;
+align-items: center;
+display: flex;
+text-shadow:0 4px 5px rgba(0,0,0,0.2) ;
+}
+
+@media (max-width:450px){
+h1{
+  margin-left: 72px;
+  margin-top: -80px;
+}
+}
